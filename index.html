@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czyścimy Wszystko i Wszędzie | Opróżnianie Mieszkań, Wywóz Gabarytów & Gruzu - Bydgoszcz</title>
+    <meta name="description" content="Profesjonalne opróżnianie mieszkań, sprzątanie piwnic, wywóz gabarytów, AGD, gruzu oraz utylizacja niepotrzebnych rzeczy w Bydgoszczy. Szybki dojazd, bezpłatna wycena w 15 minut!">
+    <meta name="keywords" content="Opróżnianie mieszkań Bydgoszcz, wywóz gabarytów i AGD, sprzątanie piwnic, wywóz rzeczy niepotrzebnych, utylizacja, wywóz śmieci, sprzątanie terenów otwartych, sprzątanie magazynów hal, wywóz gruzu Bydgoszcz">
+    <meta property="og:title" content="Czyścimy Wszystko i Wszędzie — Wywóz Rzeczy, Gruzu i Opróżnianie Mieszkań Bydgoszcz">
+    <meta property="og:description" content="Szybki wywóz gabarytów, opróżnianie mieszkań i sprzątanie piwnic w Bydgoszczy. Legalna utylizacja z BDO. Zadzwoń pod +48 794 154 164 po darmową wycenę!">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white pb-20 md:pb-0">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-900 text-white py-2 text-xs md:text-sm font-medium px-4 text-center">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+            <span class="flex items-center justify-center gap-2 w-full md:w-auto">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>Bydgoszcz i okolice — Dojazd i bezpłatna wycena w 15 minut!</span>
+            </span>
+            <div class="hidden md:flex items-center space-x-6 text-slate-300">
+                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i> Łużycka 40, Bydgoszcz</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-brand-500"></i> Pn - Nd: 7:00 - 21:00</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Legalna utylizacja BDO</span>
+                <a href="tel:+48794154164" class="text-white hover:text-brand-100 font-bold underline flex items-center gap-1">
+                    <i data-lucide="phone" class="w-4 h-4"></i> +48 794 154 164
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- UNIFIED SOLID LOGO -->
+                <a href="#" class="inline-flex items-center gap-3.5 bg-gradient-to-r from-brand-900 via-brand-800 to-brand-700 text-white px-5 py-2.5 rounded-2xl shadow-lg shadow-brand-900/25 hover:shadow-brand-800/40 transition-all border border-brand-600/40 group">
+                    <div class="w-9 h-9 rounded-xl bg-brand-500/30 backdrop-blur-md flex items-center justify-center text-white border border-brand-400/30 group-hover:scale-105 transition-transform shrink-0">
+                        <i data-lucide="truck" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div class="flex flex-col leading-tight">
+                        <span class="text-lg md:text-xl font-extrabold tracking-tight text-white flex items-center gap-1">
+                            Czyścimy<span class="text-brand-300">Wszystko</span>
+                        </span>
+                        <span class="text-[10px] font-bold text-slate-300 tracking-wider uppercase">I WSZĘDZIE • BYDGOSZCZ</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden md:flex items-center space-x-8 font-semibold text-slate-700">
+                    <a href="#o-nas" class="hover:text-brand-600 transition-colors py-2">O nas</a>
+                    <a href="#uslugi" class="hover:text-brand-600 transition-colors py-2">Zakres usług</a>
+                    <a href="#kontakt" class="hover:text-brand-600 transition-colors py-2">Kontakt</a>
+                </nav>
+
+                <!-- DESKTOP CTA BUTTON -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <a href="tel:+48794154164" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand-600 text-white font-bold shadow-lg shadow-brand-600/25 hover:bg-brand-700 hover:shadow-brand-700/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 pulse-subtle">
+                        <i data-lucide="phone-call" class="w-5 h-5 mr-2"></i>
+                        <span>+48 794 154 164</span>
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Otwórz menu" class="p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAV DROPDOWN -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+            <a href="#o-nas" class="mobile-nav-link block px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600">O nas</a>
+            <a href="#uslugi" class="mobile-nav-link block px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600">Zakres usług</a>
+            <a href="#kontakt" class="mobile-nav-link block px-4 py-3 rounded-xl font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600">Kontakt i Wycena</a>
+            <div class="pt-2">
+                <a href="tel:+48794154164" class="w-full flex items-center justify-center px-4 py-3 rounded-xl bg-brand-600 text-white font-bold text-center">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2"></i> Zadzwoń: +48 794 154 164
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-gradient relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+
+                    <!-- Main H1 SEO Title -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Szybkie <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">opróżnianie mieszkań</span> oraz wywóz gabarytów i gruzu
+                    </h1>
+
+                    <!-- Lead text with keywords -->
+                    <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Szukasz profesjonalnej ekipy w Bydgoszczy do <strong>sprzątania piwnic</strong> lub <strong>wywozu niepotrzebnych rzeczy</strong>? 
+                        Firma <em>Czyścimy wszystko i wszędzie</em> zapewnia ekspresowy <strong>wywóz gabarytów i AGD</strong>, 
+                        <strong>wywóz śmieci</strong> oraz <strong>wywóz gruzu</strong> i <strong>utylizację</strong> z wpisem BDO.
+                    </p>
+
+                    <!-- Trust checklist -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-xl mx-auto lg:mx-0 font-semibold text-slate-700">
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Bezpłatna wycena telefoniczna</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Wnoszenie & Znoszenie z pięter</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Wywóz gruzu i odpadów BDO</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Dojazd na terenie Bydgoszczy</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to action buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="tel:+48794154164" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-brand-600 text-white font-bold text-lg shadow-xl shadow-brand-600/30 hover:bg-brand-700 transition-all transform hover:-translate-y-1">
+                            <i data-lucide="phone-call" class="w-6 h-6 mr-3"></i>
+                            <span>Zadzwoń: +48 794 154 164</span>
+                        </a>
+                        <a href="#kontakt" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-white text-slate-800 font-bold text-lg border-2 border-slate-200 hover:border-brand-600 hover:text-brand-600 transition-all">
+                            <i data-lucide="file-text" class="w-6 h-6 mr-2 text-brand-600"></i>
+                            <span>Poproś o darmową wycenę</span>
+                        </a>
+                    </div>
+
+                    <!-- Google Reviews snippet -->
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-4">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center font-bold text-xs text-slate-600">MK</div>
+                            <div class="w-10 h-10 rounded-full bg-brand-200 border-2 border-white flex items-center justify-center font-bold text-xs text-brand-800">AK</div>
+                            <div class="w-10 h-10 rounded-full bg-amber-200 border-2 border-white flex items-center justify-center font-bold text-xs text-amber-800">PW</div>
+                        </div>
+                        <div class="text-left">
+                            <div class="flex items-center gap-1 text-amber-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                                <span class="text-slate-900 font-bold text-sm ml-1">4.9 / 5.0</span>
+                            </div>
+                            <p class="text-xs text-slate-500 font-medium">1,200+ zadowolonych klientów w Bydgoszczy i regionie</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Column (Clean Van Image) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
+                        <img src="/assets/images/hero_van_clean.png" alt="Pojazd dostawczy wywóz i opróżnianie mieszkań Bydgoszcz" class="w-full h-[450px] lg:h-[540px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating info card -->
+                        <div class="absolute bottom-6 left-6 right-6 p-5 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-white/40">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center">
+                                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-slate-900">Łużycka 40, Bydgoszcz</p>
+                                        <p class="text-xs text-slate-500">Szybki dojazd na terenie całego miasta</p>
+                                    </div>
+                                </div>
+                                <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-full">Dostępni Dziś</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: O NAS -->
+    <section id="o-nas" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-sm">O nas — Kim jesteśmy</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Doświadczenie, punktualność i legalna utylizacja w Bydgoszczy
+                </h2>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Firma <strong>Czyścimy wszystko i wszędzie</strong> z siedzibą przy ul. Łużyckiej 40 w Bydgoszczy to Twój zaufany partner w zakresie usuwania zbędnych przedmiotów. Pomagamy osobom prywatnym, firmom oraz zarządcom nieruchomości odzyskać czystą przestrzeń.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Story -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-slate-900">
+                        Dlaczego klienci powierzają nam opróżnianie mieszkań i sprzątanie?
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Niezależnie od tego, czy potrzebujesz <strong>sprzątania piwnic</strong>, wyniesienia starych mebli po zakupie mieszkania, czy też pilnego <strong>wywozu gruzu</strong> po remontach — podchodzimy do każdego zlecenia indywidualnie. Ponieważ zakres prac i objętość różnią się w zależności od lokalu, każdą wycenę przygotowujemy indywidualnie i uczciwie na miejscu lub telefonicznie.
+                    </p>
+                    
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-1 font-bold text-xs">✓</div>
+                            <div>
+                                <strong class="text-slate-900">Legalna utylizacja i środowisko:</strong> Wszelkie odpady, stare sprzęty i <strong>wywóz śmieci</strong> realizujemy zgodnie z polskim prawem oraz przepisami BDO.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-1 font-bold text-xs">✓</div>
+                            <div>
+                                <strong class="text-slate-900">Brak ukrytych kosztów:</strong> Ustalana cena jest ostateczna. W cenie zawarty jest załadunek, wnoszenie/znoszenie oraz transport do punktu utylizacji.
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0 mt-1 font-bold text-xs">✓</div>
+                            <div>
+                                <strong class="text-slate-900">Kultura pracy i dyskrecja:</strong> Zespół pracuje sprawnie, cicho i z poszanowaniem mienia oraz sąsiadów.
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Stats Row -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-100 text-center">
+                        <div class="bg-slate-50 p-4 rounded-2xl">
+                            <div class="text-3xl font-black text-brand-600">1200+</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase mt-1">Opróżnionych mieszkań</div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl">
+                            <div class="text-3xl font-black text-brand-600">100%</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase mt-1">Recykling BDO</div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-2xl">
+                            <div class="text-2xl sm:text-3xl font-black text-brand-600">7 - 21</div>
+                            <div class="text-xs font-semibold text-slate-500 uppercase mt-1">Pn - Nd Godziny</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Image Showcase -->
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-slate-100">
+                        <img src="/assets/images/apartment_clearance.png" alt="Opróżnianie mieszkań i czyste pomieszczenie" class="w-full h-[400px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-brand-900 text-white p-6 rounded-2xl shadow-2xl max-w-xs hidden sm:block">
+                        <i data-lucide="quote" class="w-8 h-8 text-brand-400 mb-2"></i>
+                        <p class="text-sm font-medium italic">"Zostawiamy pomieszczenia idealnie czyste. Wystarczy jeden telefon pod +48 794 154 164!"</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: ZAKRES USŁUG -->
+    <section id="uslugi" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-sm">Zakres Usług</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    W czym możemy Ci dzisiaj pomóc?
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Oferujemy pełen wachlarz prac porządkowych, demontażowych i wywozowych na terenie Bydgoszczy i okolic.
+                </p>
+            </div>
+
+            <!-- Service Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12" id="service-filters">
+                <button data-filter="all" class="filter-btn active px-5 py-2.5 rounded-xl font-bold text-sm bg-brand-600 text-white shadow-md transition-all">Wszystkie usługi</button>
+                <button data-filter="mieszkania" class="filter-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all">Mieszkania i Piwnice</button>
+                <button data-filter="wywoz" class="filter-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all">Gabaryty i Gruz</button>
+                <button data-filter="komercyjne" class="filter-btn px-5 py-2.5 rounded-xl font-bold text-sm bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition-all">Magazyny i Tereny</button>
+            </div>
+
+            <!-- Services Grid (9 Cards) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- CARD 1 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="mieszkania">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="home" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Opróżnianie mieszkań</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Kompleksowe <strong>opróżnianie mieszkań</strong>, domów i lokali w Bydgoszczy przed sprzedażą lub wynajmem. Wynosimy meble, dywany, sprzęty i pełne wyposażenie.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Demontaż starych mebli</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Znoszenie z dowolnego piętra</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Zamiatanie na błysk po zakończeniu</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="wywoz">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="sofa" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Wywóz gabarytów i AGD</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Szybki <strong>wywóz gabarytów i AGD</strong> (stare pralki, lodówki, meble wielkogabarytowe, wersalki, szafy). Bezpieczny załadunek i legalna utylizacja.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Odbiór pojedynczych mebli i sprzętów</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Odzysk surowców i Eko-Recykling</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="mieszkania">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="warehouse" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Sprzątanie piwnic i strychów</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Profesjonalne <strong>sprzątanie piwnic</strong>, strychów, komórek lokatorskich oraz garaży. Pozbywamy się zagracenia raz na zawsze.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Usuwanie staroci i kurzu</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Wynoszenie bez ryzyka uszkodzeń</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="wywoz">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="trash-2" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Wywóz rzeczy niepotrzebnych</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Sprawny <strong>wywóz rzeczy niepotrzebnych</strong> z mieszkań, biur i lokali. Odbieramy stare ubrania, kartony, gabaryty i drobne wyposażenie.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Segregacja u klienta</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Pakowanie do worków i kontenerów</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="wywoz">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="recycle" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Utylizacja i wywóz śmieci</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Certyfikowana <strong>utylizacja</strong> oraz <strong>wywóz śmieci</strong> komunalnych i wielkogabarytowych. Posiadamy kody odpadów i wpis BDO.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Karta Przekazania Odpadu (KPO)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Eko utylizacja plastiku, drewna, metalu</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="wywoz">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="hard-hat" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Wywóz gruzu i poremontowy</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Ekspresowy <strong>wywóz gruzu</strong>, kafelków, płyt G-K i odpadów po remontach. Oferujemy wywóz w workach Big-Bag lub bezpośrednio samochodem.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Pakowanie i ładowanie gruzu pod drzwi</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Czyszczenie powierzchni po pracach</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="komercyjne">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="trees" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Sprzątanie terenów otwartych</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Kompleksowe <strong>sprzątanie terenów otwartych</strong>, porządkowanie zaniedbanych działek, wywóz gałęzi, korzeni oraz liści.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Karczowanie zarośli i koszenie</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Przygotowanie terenu pod inwestycje</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="komercyjne">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="building-2" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Sprzątanie magazynów i hal</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Przemysłowe <strong>sprzątanie magazynów hal</strong>, czyszczenie powierzchni wielkopowierzchniowych i wywóz odpadów produkcyjnych.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Likwidacja starych regałów i palet</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Usługi dla korporacji i zarządców</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 9 -->
+                <div class="service-card bg-white rounded-3xl p-8 shadow-sm border border-slate-200/80 card-hover flex flex-col justify-between" data-category="mieszkania">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                            <i data-lucide="sparkle" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Sprzątanie po zgonach i zalaniach</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Specjalistyczne sprzątanie, dezynfekcja oraz wywóz skażonego wyposażenia po zalaniach, pożarach czy zgonach.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2 pt-2 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Ozonowanie i zamgławianie</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> 100% bezpieczeństwa biologicznego</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 border-t border-slate-100 mt-6">
+                        <a href="#kontakt" class="w-full inline-flex items-center justify-center py-3 rounded-xl bg-slate-50 hover:bg-brand-600 hover:text-white font-bold text-sm text-brand-600 transition-colors">
+                            Poproś o wycenę <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="py-20 bg-slate-50 border-t border-slate-200/80">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 space-y-3">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-sm">Pytań & Odpowiedzi</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">Pytania, które najczęściej zadają nasi klienci</h2>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>Jak ustalana jest cena za opróżnianie mieszkania lub wywóz gruzu?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                        Ze względu na specyfikę prac, cena zależy od dokładnej objętości rzeczy (w m³), rodzaju odpadów, piętra oraz tego, czy w budynku jest winda. Dlatego każdą wycenę przygotowujemy indywidualnie podczas bezpłatnej rozmowy telefonicznej lub bezpłatnych oględzin na miejscu!
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>Czy muszę sam wynosić meble lub gabaryty przed budynek?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                        Nie! Nasza ekipa wykonuje pełne wynoszenie z mieszkania, piwnicy czy strychu. Nie musisz niczego dźwigać ani przygotowywać — robimy wszystko za Ciebie.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>Czy posiadacie zezwolenia na utylizację śmieci (BDO)?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                        Tak, firma Czyścimy wszystko i wszędzie działa w 100% legalnie. Posiadamy wpis do rejestru BDO oraz współpracujemy wyłącznie z licencjonowanymi stacjami recyklingu i utylizacji odpadów.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>Gdzie znajduje się Wasza siedziba?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                        Nasza siedziba mieści się przy ul. <strong>Łużyckiej 40 w Bydgoszczy</strong>. Działamy na terenie całej Bydgoszczy oraz okolicznych miejscowości.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: KONTAKT -->
+    <section id="kontakt" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-brand-600 font-bold uppercase tracking-wider text-sm">Zadzwoń lub napisz</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                            Skontaktuj się z nami — Bezpłatna Wycena
+                        </h2>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Chcesz szybko pozbyć się <strong>niepotrzebnych rzeczy</strong>, zamówić <strong>opróżnianie mieszkań</strong> lub <strong>wywóz gruzu</strong>? Jesteśmy do Twojej dyspozycji codziennie od 7:00 do 21:00.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 uppercase block">Infolinia i Wycena</span>
+                                <a href="tel:+48794154164" class="text-xl font-extrabold text-slate-900 hover:text-brand-600 transition-colors">
+                                    +48 794 154 164
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-800 flex items-center justify-center shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 uppercase block">Adres Siedziby</span>
+                                <span class="text-base font-bold text-slate-900 block">Łużycka 40, Bydgoszcz, Polska</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 uppercase block">Szybki czat WhatsApp</span>
+                                <a href="https://wa.me/48794154164?text=Dzie%C5%84%20dobry!%20Chcia%C5%82bym%20dowiedzie%C4%87%20si%C9%A9%20o%20wycenie%20us%C5%82ugi." target="_blank" class="text-lg font-bold text-emerald-600 hover:underline">
+                                    Napisz na WhatsApp →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-slate-200 text-slate-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 uppercase block">Godziny pracy</span>
+                                <span class="text-slate-800 font-semibold">Poniedziałek – Niedziela: 07:00 – 21:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Formularz Szybkiego Zgłoszenia</h3>
+                    <p class="text-slate-500 text-sm mb-6">Wypełnij formularz — oddzwonimy w ciągu maksymalnie 15 minut z wyceną.</p>
+
+                    <form id="lead-contact-form" class="space-y-5">
+                        <!-- Web3Forms API Key for Instant Email Delivery -->
+                        <input type="hidden" id="web3forms-key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                        <!-- Anti-Bot Honeypot Field -->
+                        <div class="hidden" aria-hidden="true" style="display:none !important;">
+                            <input type="text" id="form-website-hp" name="website_address_hp" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="form-name">Imię i Nazwisko *</label>
+                                <input type="text" id="form-name" required placeholder="np. Jan Kowalski" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-900 font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="form-phone">Numer Telefonu *</label>
+                                <input type="tel" id="form-phone" required placeholder="np. 794 154 164" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-900 font-medium">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="form-service">Interesująca Usługa *</label>
+                                <select id="form-service" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-900 font-medium">
+                                    <option value="">-- Wybierz usługę --</option>
+                                    <option value="Opróżnianie mieszkań">Opróżnianie mieszkań</option>
+                                    <option value="Wywóz gabarytów i AGD">Wywóz gabarytów i AGD</option>
+                                    <option value="Sprzątanie piwnic">Sprzątanie piwnic i strychów</option>
+                                    <option value="Wywóz rzeczy niepotrzebnych">Wywóz rzeczy niepotrzebnych</option>
+                                    <option value="Utylizacja i wywóz śmieci">Utylizacja i wywóz śmieci</option>
+                                    <option value="Wywóz gruzu">Wywóz gruzu i odpadów</option>
+                                    <option value="Sprzątanie terenów otwartych">Sprzątanie terenów otwartych</option>
+                                    <option value="Sprzątanie magazynów i hal">Sprzątanie magazynów i hal</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="form-location">Lokalizacja / Dzielnica *</label>
+                                <input type="text" id="form-location" required placeholder="np. Bydgoszcz, Śródmieście" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-900 font-medium">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="form-message">Opis Zlecenia</label>
+                            <textarea id="form-message" rows="4" placeholder="Opisz co dokładnie jest do wyniesienia/wywozu (np. 3 szafy, pralka, 15 worków śmieci, 3 piętro bez windy)..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-slate-900 font-medium"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-extrabold text-base shadow-lg shadow-brand-600/30 transition-all">
+                            Wyślij zapytanie o bezpłatną wycenę
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white text-slate-600 py-12 border-t border-slate-200/80 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-3">
+            <div class="inline-flex flex-wrap items-center justify-center gap-2 text-sm font-bold text-slate-800">
+                <span class="text-brand-700 font-extrabold">Czyścimy wszystko i wszędzie</span>
+                <span class="text-slate-300">•</span>
+                <span class="flex items-center gap-1 text-slate-600"><i data-lucide="map-pin" class="w-4 h-4 text-brand-600 inline"></i> ul. Łużycka 40, Bydgoszcz, Polska</span>
+                <span class="text-slate-300">•</span>
+                <a href="tel:+48794154164" class="text-brand-600 font-extrabold hover:text-brand-700 hover:underline flex items-center gap-1">
+                    <i data-lucide="phone" class="w-4 h-4 inline"></i> Tel: +48 794 154 164
+                </a>
+            </div>
+            <p class="text-slate-400 text-xs">&copy; 2026 Czyścimy wszystko i wszędzie. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CALL BAR -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 md:hidden flex gap-3 shadow-2xl">
+        <a href="tel:+48794154164" class="flex-1 py-3 px-4 rounded-xl bg-brand-600 text-white font-bold text-center text-sm flex items-center justify-center gap-2">
+            <i data-lucide="phone-call" class="w-5 h-5"></i> Zadzwoń Teraz
+        </a>
+        <a href="https://wa.me/48794154164" target="_blank" class="py-3 px-4 rounded-xl bg-emerald-500 text-white font-bold text-center text-sm flex items-center justify-center gap-1">
+            <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm hidden">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full text-center space-y-4 shadow-2xl border border-slate-100">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+                <i data-lucide="check-circle-2" class="w-10 h-10"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">Dziękujemy za zgłoszenie!</h3>
+            <p class="text-slate-600 text-sm">
+                Twój formularz został wysłany. Oddzwonimy w ciągu <strong>15 minut</strong> z wyceną.
+            </p>
+            <button id="close-modal-btn" class="w-full py-3 bg-brand-600 text-white font-bold rounded-xl">
+                Zamknij okno
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>

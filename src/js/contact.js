@@ -50,9 +50,10 @@ export function initContactForm() {
 
     try {
       const apiKey = accessKeyInput ? accessKeyInput.value : '';
+
+      // 1. Send Email via Web3Forms API
       if (apiKey && apiKey !== 'YOUR_WEB3FORMS_ACCESS_KEY') {
-        // Send email via Web3Forms API
-        await fetch('https://api.web3forms.com/submit', {
+        fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -68,10 +69,32 @@ export function initContactForm() {
             location: sanitizedData.location,
             message: sanitizedData.message
           })
-        });
+        }).catch(err => console.error('Web3Forms dispatch error:', err));
       }
+
+      // 2. Send Instant Push Notification via Telegram Bot
+      const tgBotToken = '8982284901:AAEliYxuVERL9tJY2iII12ZuA1XfPLUyXjA';
+      const tgChatId = '6426530276';
+      const tgMessage = `🚨 *NOWE ZGŁOSZENIE ZE STRONY!*\n\n` +
+        `👤 *Imię i Nazwisko:* ${sanitizedData.name}\n` +
+        `📞 *Telefon:* ${sanitizedData.phone}\n` +
+        `📦 *Usługa:* ${sanitizedData.service || 'Nieokreślona'}\n` +
+        `📍 *Lokalizacja:* ${sanitizedData.location || 'Niepodana'}\n` +
+        `💬 *Opis zlecenia:* ${sanitizedData.message || 'Brak opisu'}\n\n` +
+        `🌐 *Źródło:* czyscimywszystkoiwszedzie.pl`;
+
+      await fetch(`https://api.telegram.org/bot${tgBotToken}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: tgChatId,
+          text: tgMessage,
+          parse_mode: 'Markdown'
+        })
+      }).catch(err => console.error('Telegram dispatch error:', err));
+
     } catch (err) {
-      console.error('Email dispatch error:', err);
+      console.error('Dispatch error:', err);
     } finally {
       if (submitBtn) {
         submitBtn.innerText = originalBtnText;

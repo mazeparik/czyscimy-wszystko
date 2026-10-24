@@ -1,3 +1,4 @@
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -14,6 +15,16 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        oproznianie: resolve(__dirname, 'oproznianie-mieszkan.html'),
+        gabaryty: resolve(__dirname, 'wywoz-gabarytow.html'),
+        gruz: resolve(__dirname, 'wywoz-gruzu.html'),
+        smieci: resolve(__dirname, 'wywoz-smieci.html'),
+        piwnice: resolve(__dirname, 'sprzatanie-piwnic.html'),
+      }
+    }
   }
 });

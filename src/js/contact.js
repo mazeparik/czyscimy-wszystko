@@ -80,6 +80,18 @@ export function initContactForm() {
       }
       // Show Success Confirmation Modal
       successModal.classList.remove('hidden');
+
+      // Google Ads Conversion Event: Lead Form Submit
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-18535410845',
+          event_category: 'lead_form',
+          event_label: sanitizedData.service || 'form_lead',
+          value: 10.0,
+          currency: 'PLN'
+        });
+      }
+
       leadForm.reset();
     }
   });

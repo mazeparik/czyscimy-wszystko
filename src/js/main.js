@@ -4,6 +4,7 @@ import { initServiceTabs } from './tabs.js';
 import { initFaq } from './faq.js';
 import { initContactForm } from './contact.js';
 import { initCookieBanner } from './cookies.js';
+import { initAnalyticsTracking } from './analytics.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
@@ -11,4 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaq();
   initContactForm();
   initCookieBanner();
+  initAnalyticsTracking();
 });
